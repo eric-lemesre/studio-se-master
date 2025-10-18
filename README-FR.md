@@ -5,7 +5,7 @@ http://www.deilink.fr
 
 > Contenu
 
-Dépôt maître utilisant gitslave pour agréger tous les dépôts open source de Talaxie Studio
+Dépôt maître utilisant `gitslave` pour agréger tous les dépôts open source de Talaxie Studio
 
 Ce dossier est un dossier racine GitSlave.
 C'est un simple dépôt git mais il permet de travailler avec tous les dépôts open source de Talaxie Studio en tant qu'esclaves.
@@ -15,22 +15,25 @@ Installer GitSlave
 GitSlave est l'outil que vous pouvez utiliser pour effectuer des commandes multi-dépôts. Afin de l'utiliser à son plein potentiel, veuillez installer :
 * perl
 * cloner ce dépôt localement si ce n'est pas déjà fait.
-* déplacer le dossier tools/gitslave-2.0.2 dans vos propres dossiers utilisateur.
+* déplacer le dossier `tools/gitslave-2.0.2` dans vos propres dossiers utilisateur.
 * Ensuite, vous pouvez créer un alias vers le script principal appelé "gits" (utilisez gits_for_mac si vous êtes sur Mac).
 
 Comment l'utiliser
 ------------------
-La liste des dépôts gérés par ce dépôt gitslave se trouve dans le fichier .gitslave
+La liste des dépôts gérés par ce dépôt `gitslave` se trouve dans le fichier `.gitslave`
 Toutes les commandes Gitslave sont disponibles ici : http://gitslave.sourceforge.net/gits-man-page.html
 
 Si vous souhaitez télécharger (cloner) tous les dépôts esclaves du studio, utilisez la commande
 
-        gits populate --with-ifpresent
+```shell
+gits populate --with-ifpresent
+```
 
 Si vous souhaitez télécharger un ensemble de dépôts esclaves, utilisez
 
-         gits populate <nom_du_depot1> <nom_du_depot2>
-
+```shell
+gits populate <nom_du_depot1> <nom_du_depot2>
+```
 Ne pas utiliser Git slave
 ==========================
 Vous pouvez configurer tous les dépôts git manuellement.
@@ -58,7 +61,7 @@ D'abord, si vous n'avez jamais construit d'artefacts Studio sur votre machine, v
 cd talend.studio.parent.pom mvn clean install
 ```
 
-Ensuite, revenez à la racine de ce dépôt et lancez la même commande Maven pour construire tous les artefacts Studio.
+Ensuite, revenez à la racine de ce dépôt et lancez la même commande *Maven* pour construire tous les artefacts Studio.
 
 ```shell
 mvn clean install
