@@ -11,3 +11,4 @@ build*.bat
 target/
 workspace/
 /nexus.crt
+.idea/
